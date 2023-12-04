@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo"><img src="https://cdn-icons-png.flaticon.com/512/1703/1703879.png" alt="Логотип"
+                    class="logoimg"></div>
+            <div class="title">Перевірка знань</div>
+        </header>
+        <nav>
+        <ul class="list">
+            <li><a href="index.html">Головна</a></li>
+            <li class="submenu">
+                <a href="ideas.html">Про стартапи</a>
+                <ul>
+                    <li><a href="ideas.html">Ідеї</a></li>
+                    <li><a href="creation.html">Створення та розвиток</a></li>
+                    <li><a href="finances.html">Фінансуваня</a></li>
+                    <li><a href="stories.html">Успішні історії</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="calculator.html">Калькулятор</a>
+                <ul>
+                    <li><a href="calculator.html">Калькулятор ROI</a></li>
+                    <li><a href="calculator2.html">Оцінка ROI</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="test.html">Перевірка знань</a>
+                <ul>
+                    <li><a href="test.html">Опитування</a></li>
+                    <li><a href="tasks.html">Тренажер</a></li>
+                    <li><a href="test2.html">Тест</a></li>
+                </ul>
+            </li>
+        </ul>
+        </nav>
+        <main>
+            <aside class="left">
+                <h2 class="question">Що таке ROI?</h2>
+                <br>
+                <p class="answer">ROI — return on Іnvestment, або окупність, рентабельність інвестицій.
+                    Це загальновживаний термін у бізнесі, який використовується для визначення минулих та потенційних
+                    фінансових прибутків. </p>
+                <h2 class="question">За якою формулою розраховується ROI?</h2>
+                <br>
+                <div class="answer"><img src="https://i.ibb.co/r6d7p5K/ROI-1.png" alt="Логотип" class="logoimg">
+                </div>
+                <h2 class="question">Який показник ROI можна вважати хорошим, який — поганим?</h2>
+                <br>
+                <p class="answer"> Показник ROI більше 100% — хороший, менше — поганий (бізнес збитковий). Однак формулу
+                    ROI не можна виривати із
+                    загального контексту розвитку компанії. Наприклад, в якісь періоди має сенс більше грошей витрачати
+                    на рекламу і маркетинг, щоб максимально розширити ринок
+                    збуту. Це означає, що ROI буде знижуватися в короткостроковій перспективі. Але в більш
+                    довгостроковій перспективі
+                    зроблені зараз маркетингові вкладення продовжать працювати вже при меншому фінансовому підживленні,
+                    так що ROI в такому
+                    випадку автоматично зросте. </p>
+            </aside>
+            <article class="right">     
+                <h1 class="question">Тестування</h1>
+                <div class="wrapper" id="wrapper">
+                    <div id="questions">
+                        <h1 id="title"></h1>
+                        <p id="question"></p>
+                        <p class ="article"><input type="radio" name="year" id="y1"><span id="a1"></span></p>
+                        <p class ="article"><input type="radio" name="year" id="y2"><span id="a2"></span></p>
+                        <p class ="article"><input type="radio" name="year" id="y3"><span id="a3"></span></p>
+                        <p class ="article"><input type="radio" name="year" id="y4"><span id="a4"></span></p>
+                
+                        <button id="get_answer">Відповідь</button>
+                        <div class="right_div hidden" id="right_div">
+                            <p class="correct" id="right">Правильна відповідь</p>
+                            <button id="next_question">Наступне питання</button>
+                        </div>
+                        <div class="wrong_div hidden" id="wrong_div">
+                            <p class="incorrect" id="wrong">Неправильна відповідь</p>
+                            <button id="view_answer">Дізнатися правильну відповідь</button>
+                        </div>
+                
+                        <p id="answer" class="hidden"></p>
+                    </div>
+                    <div id="total_div">
+                        <p class ="article">Номер питання: <span id="n"></span></p>
+                        <p class ="article" >Кількість правильних відповідей: <span id="n_right"></span> (з першого разу).</p>
+                    </div>
+                </div>
+                <input type="hidden" value="0" id="n_question">
+                <script src="js/script4.js"></script>
+                <div class="point"><img
+                        src="https://ouch-cdn2.icons8.com/o3E0NsZ4LYjQW_1RGcP1iUaCbkeJbxqKlatksvGphgg/rs:fit:456:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNzI1/L2YwZDQyMGY4LTZh/MGMtNDU2Ny05ZDA0/LTVhZTRiNzIxMzZk/MS5zdmc.png" alt="Логотип"
+                        class="img"> </div>
+            
+        </main>
+        <footer>Усі права захищені</footer>
+
+    </div>
+</body>
+
+</html>
